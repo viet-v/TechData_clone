@@ -1,0 +1,14 @@
+
+.bg-side {
+    position: fixed;
+}
+
+.navBar {
+    background-color: #21314D;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 15rem !important ;
+}
