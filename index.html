@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechData - clone</title>
-    <link rel="stylesheet" href="style.css">
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <nav class="container-fluid navBar fixed-top">
@@ -18,189 +18,203 @@
         </a>
     </nav>
     <main class="container-fluid row p-0">
-        <aside class="col m-0 p-0">
+        <aside class="col-md-3 m-0 p-0">
             <img src="./images/bg-side.png" alt="Tech illustrative image on the left sidebar" class="bg-side">
         </aside>
-        <section class="content col-8">
-            <h1>Growing Edge to Cloud Possibilites</h1>
-            <div class="event_info">
-                <div>
-                    <div class="event_detail">
-                        <p class="event_detail_bold">
-                            <b>Date:</b>
+        <div class="col-md-9 content">
+            <section class="content_top">
+                <h1 class="MetricHPE_bold">Growing Edge to Cloud<br>
+                                            Possibilites</h1>
+                <div class="event_info row">
+                    <div class="col-5">
+                        <div class="event_detail row">
+                            <p class="event_detail_bold col-3">
+                                <b>Date:</b>
+                            </p>
+                            <p class="event_detail_normal col-9">
+                                6 April 2022, Wednesday
+                            </p>
+                        </div>
+                        <div class="event_detail row">
+                            <p class="event_detail_bold col-3">
+                                <b>Time:</b>
+                            </p>
+                            <p class="event_detail_normal col-9">
+                                10:00 AM - 1:00 PM (SGT)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event_detail col-7 row">
+                        <p class="event_detail_bold col-3">
+                            <b>Venue:</b>
                         </p>
-                        <p class="event_detail_normal">
-                            6 April 2022, Wednesday
+                        <p class="event_detail_normal col-9">
+                            Tech Data Office<br>
+                            2 Serangoon North Avenue 5, #05-03<br>
+                            Singapore 554911
                         </p>
                     </div>
                     <div class="event_detail">
-                        <p class="event_detail_bold">
-                            <b>Time:</b>
-                        </p>
                         <p class="event_detail_normal">
-                            10:00 AM - 1:00 PM (SGT)
+                            *Lunch will be provided
                         </p>
                     </div>
                 </div>
-                <div class="event_detail">
-                    <p class="event_detail_bold">
-                        <b>Venue:</b>
-                    </p>
-                    <p class="event_detail_normal">
-                        Tech Data Office<br>
-                        2 Serangoon North Avenue 5, #05-03<br>
-                        Singapore 554911
-                    </p>
-                </div>
-                <div class="event_detail">
-                    <p class="event_detail_normal">
-                        *Lunch will be provided
-                    </p>
-                </div>
-            </div>
-            <p class="event_instruction">
-                Welcome to the <b>HPE Growing Edge to Cloud Possibilities Partner Enablement event</b> registration page.
-                <br><br>
-                Please reserve your place by completing the form below.
-            </p>
-            <form action="" method="post" name="regForm">
-                <div class="personal_details">
-                    <p class="field_title">
-                        Personal Details
-                    </p>
-                    <div class="personal_details_fields">
-                        <div class="text_field">
-                            <label for="firstName" class="field_label">
-                                First Name
-                            </label>
-                            <input type="text" id="firstName" class="text_input" name="firstName">
-                        </div>
-                        <div class="text_field">
-                            <label for="lastName" class="field_label">
-                                Last Name
-                            </label>
-                            <input type="text" id="lastName" class="text_input" name="lastName">
-                        </div>
-                        <div class="text_field">
-                            <label for="company" class="field_label">
-                                Company
-                            </label>
-                            <input type="text" id="company" class="text_input" name="company">
-                        </div>
-                        <div class="text_field">
-                            <label for="jobTitle" class="field_label">
-                                Job Title
-                            </label>
-                            <input type="text" id="jobTitle" class="text_input" name="jobTitle">
-                        </div>
-                        <div class="text_field">
-                            <label for="businessEmail" class="field_label">
-                                Business Email
-                            </label>
-                            <input type="email" id="businessEmail" class="text_input" name="businessEmail">
-                        </div>
-                        <div class="text_field">
-                            <label for="mobileNo" class="field_label">
-                                Mobile No.
-                            </label>
-                            <input type="tel" id="mobileNo" class="text_input" name="mobileNo">
+                <p class="event_instruction HelveticaNeueLt">
+                    Welcome to the <b>HPE Growing Edge to Cloud Possibilities Partner Enablement event</b> registration page.
+                    <br><br>
+                    Please reserve your place by completing the form below.
+                </p>
+                <form action="" method="post" name="regForm">
+                    <div class="personal_details">
+                        <p class="field_title HelveticaNeueBd">
+                            Personal Details
+                        </p>
+                        <div class="personal_details_fields">
+                            <div class="row">
+                                <div class="input_field col-6 row">
+                                    <label for="firstName" class="field_label HelveticaNeueLt">
+                                        First Name
+                                    </label>
+                                    <input type="text" id="firstName" class="text_input" name="firstName">
+                                </div>
+                                <div class="input_field col-6 row">
+                                    <label for="lastName" class="field_label HelveticaNeueLt">
+                                        Last Name
+                                    </label>
+                                    <input type="text" id="lastName" class="text_input" name="lastName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input_field col-6 row">
+                                    <label for="company" class="field_label HelveticaNeueLt">
+                                        Company
+                                    </label>
+                                    <input type="text" id="company" class="text_input" name="company">
+                                </div>
+                                <div class="input_field col-6 row">
+                                    <label for="jobTitle" class="field_label HelveticaNeueLt">
+                                        Job Title
+                                    </label>
+                                    <input type="text" id="jobTitle" class="text_input" name="jobTitle">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input_field col-6 row">
+                                    <label for="businessEmail" class="field_label HelveticaNeueLt">
+                                        Business Email
+                                    </label>
+                                    <input type="email" id="businessEmail" class="text_input" name="businessEmail">
+                                </div>
+                                <div class="input_field col-6 row">
+                                    <label for="mobileNo" class="field_label HelveticaNeueLt">
+                                        Mobile No.
+                                    </label>
+                                    <input type="tel" id="mobileNo" class="text_input" name="mobileNo">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="demographic">
-                    <p class="field_title">
-                        Attendee Demographics and Interest
-                    </p>
+                    <div class="demographic">
+                        <p class="field_title HelveticaNeueBd">
+                            Attendee Demographics and Interest
+                        </p>
 
-                    <select name="business_role" id="business_role">
-                        <option value="" style="display: none">Business Role:</option>
-                        <option value="Sales">Sales</option>
-                        <option value="Technical">Technical</option>
-                    </select>
+                        <select name="business_role" id="business_role">
+                            <option value="" style="display: none">Business Role:</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Technical">Technical</option>
+                        </select>
 
-                    <p>What are the IT projects that your customers are keen on pursuing?</p>
+                        <p>What are the IT projects that your customers are keen on pursuing?</p>
 
-                    <div class="IT_projects">
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_a" id="IT_project_a" class="IT_input">
-                            <label for="IT_project_a" class="IT_label">Virtual Desktop Infrastructure</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_b" id="IT_project_b" class="IT_input">
-                            <label for="IT_project_b" class="IT_label">High Performance Computing</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_c" id="IT_project_c" class="IT_input">
-                            <label for="IT_project_c" class="IT_label">Big Data and Analytics Solutions</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_d" id="IT_project_d" class="IT_input">
-                            <label for="IT_project_d" class="IT_label">AI, ML and DL</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_e" id="IT_project_e" class="IT_input">
-                            <label for="IT_project_e" class="IT_label">Infrastructure Consolidation to Virtual</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_f" id="IT_project_f" class="IT_input">
-                            <label for="IT_project_f" class="IT_label">Hybrid Cloud</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_g" id="IT_project_g" class="IT_input">
-                            <label for="IT_project_g" class="IT_label">Security and Networking</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_h" id="IT_project_h" class="IT_input">
-                            <label for="IT_project_h" class="IT_label">DevOps</label>
-                        </div>
-                        <div class="IT_project">
-                            <input type="radio" name="IT_project_i" id="IT_project_i" class="IT_input">
-                            <label for="IT_project_i" class="IT_label">Others</label>
+                        <div class="IT_projects">
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_a" id="IT_project_a" class="IT_input">
+                                <label for="IT_project_a" class="IT_label">Virtual Desktop Infrastructure</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_b" id="IT_project_b" class="IT_input">
+                                <label for="IT_project_b" class="IT_label">High Performance Computing</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_c" id="IT_project_c" class="IT_input">
+                                <label for="IT_project_c" class="IT_label">Big Data and Analytics Solutions</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_d" id="IT_project_d" class="IT_input">
+                                <label for="IT_project_d" class="IT_label">AI, ML and DL</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_e" id="IT_project_e" class="IT_input">
+                                <label for="IT_project_e" class="IT_label">Infrastructure Consolidation to Virtual</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_f" id="IT_project_f" class="IT_input">
+                                <label for="IT_project_f" class="IT_label">Hybrid Cloud</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_g" id="IT_project_g" class="IT_input">
+                                <label for="IT_project_g" class="IT_label">Security and Networking</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_h" id="IT_project_h" class="IT_input">
+                                <label for="IT_project_h" class="IT_label">DevOps</label>
+                            </div>
+                            <div class="IT_project">
+                                <input type="radio" name="IT_project_i" id="IT_project_i" class="IT_input">
+                                <label for="IT_project_i" class="IT_label">Others</label>
+                            </div>
                         </div>
                     </div>
+                    <div class="dietary">
+                        <p class="field_title HelveticaNeueBd">
+                            Dietary Preference: 
+                        </p>
+                        <select name="dietary_preference" id="dietary_preference">
+                            <option value="" style="display: none;">Please choose:</option>
+                            <option value="none">None</option>
+                            <option value="halal">Halal</option>
+                            <option value="vegetarian">Vegetarian</option>
+                        </select>
+                    </div>
+                    <div class="requirements">
+                        <ul>
+                            <li>Attendees will need to show proof of a negative Antigen Rapid Test result for entry into the event.</li>
+                            <li>By registering for this event, attendees have confirmed that they are fully vaccinated.</li>
+                            <li>Safe Management Measures (SMM) will be taken at the event venue to comply with Singapore Tourism Board’s SMM requirements for MICE.</li>
+                        </ul>
+                    </div>
+                    <div class="data_privacy">
+                        <input type="checkbox" name="privacy_consent" id="privacy_consent">
+                        <label for="privacy_consent" class="privacy_label">
+                            You agree that HPE and Tech Data may collect, use and disclose your personal data, which you have provided in this form, for providing marketing materials that you have agreed to receive, in accordance with the Personal Data Protection Act 2012 and our data protection policy (available at our website <a href="https://www.techdata.com/privacy/" target="_blank">https://www.techdata.com/privacy/</a>). Please visit our website at <a href="https://www.techdata.com/privacy/" target="_blank">https://www.techdata.com/privacy/</a> for further details on our data protection policy, including how you may access and correct your personal data or withdraw consent to the collection, use or disclosure of your personal data.
+                        </label>
+                    </div>
+                    <button>Submit Form</button>
+                </form>
+            </section>
+            <section class="content_bottom">
+                <div class="contact">
+                    <img src="./images/icon-contact.png" alt="phone logo">
+                    <p class="">Should you have any queries, please feel free to call us at <a href="tel:6295 1788">6295 1788</a> or email <a href="mailto:">Olivia Wang</a> for more information.</p>
                 </div>
-                <div class="dietary">
-                    <select name="dietary_preference" id="dietary_preference">
-                        <option value="" style="display: none;">Please choose:</option>
-                        <option value="none">None</option>
-                        <option value="halal">Halal</option>
-                        <option value="vegetarian">Vegetarian</option>
-                    </select>
+                <div class="footer">
+                    <div class="brands">
+                        <p>In collaboration with:</p>
+                        <img src="./images/logo-TechData-dark.png" alt="TechData dark logo">
+                        <img src="./images/logo-HPE.png" alt="Hewlett Packard Enterprise logo">
+                    </div>
+                    <div class="socials">
+                        <img src="./images/icon-fb.png" alt="Facebook logo">
+                        <img src="./images/icon-twitter.png" alt="Twitter logo">
+                        <img src="./images/icon-youtube.png" alt="Youtube logo">
+                        <img src="./images/icon-linkedin.png" alt="LinkedIn logo">
+                        <img src="./images/icon-site.png" alt="Website icon">
+                    </div>
                 </div>
-                <div class="requirements">
-                    <ul>
-                        <li>Attendees will need to show proof of a negative Antigen Rapid Test result for entry into the event.</li>
-                        <li>By registering for this event, attendees have confirmed that they are fully vaccinated.</li>
-                        <li>Safe Management Measures (SMM) will be taken at the event venue to comply with Singapore Tourism Board’s SMM requirements for MICE.</li>
-                    </ul>
-                </div>
-                <div class="data_privacy">
-                    <input type="checkbox" name="privacy_consent" id="privacy_consent">
-                    <label for="privacy_consent" class="privacy_label">
-                        You agree that HPE and Tech Data may collect, use and disclose your personal data, which you have provided in this form, for providing marketing materials that you have agreed to receive, in accordance with the Personal Data Protection Act 2012 and our data protection policy (available at our website <a href="https://www.techdata.com/privacy/" target="_blank">https://www.techdata.com/privacy/</a>). Please visit our website at <a href="https://www.techdata.com/privacy/" target="_blank">https://www.techdata.com/privacy/</a> for further details on our data protection policy, including how you may access and correct your personal data or withdraw consent to the collection, use or disclosure of your personal data.
-                    </label>
-                </div>
-                <button>Submit Form</button>
-            </form>
-            <div class="contact">
-                <img src="./images/icon-contact.png" alt="phone logo">
-                <p class="">Should you have any queries, please feel free to call us at <a href="tel:6295 1788">6295 1788</a> or email <a href="mailto:">Olivia Wang</a> for more information.</p>
-            </div>
-            <div class="footer">
-                <div class="brands">
-                    <p>In collaboration with:</p>
-                    <img src="./images/logo-TechData-dark.png" alt="TechData dark logo">
-                    <img src="./images/logo-HPE.png" alt="Hewlett Packard Enterprise logo">
-                </div>
-                <div class="socials">
-                    <img src="./images/icon-fb.png" alt="Facebook logo">
-                    <img src="./images/icon-twitter.png" alt="Twitter logo">
-                    <img src="./images/icon-youtube.png" alt="Youtube logo">
-                    <img src="./images/icon-linkedin.png" alt="LinkedIn logo">
-                    <img src="./images/icon-site.png" alt="Website icon">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <!-- Bootstrap JS -->

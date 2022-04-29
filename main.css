@@ -1,0 +1,140 @@
+/* ------------------- FONTS ---------------------- */
+
+@font-face {
+    font-family: 'MetricHPE_bold';
+    src: url('./fonts/MetricHPE-Desktop-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'HelveticaNeueBd';
+    src: url('./fonts/HelveticaNeueBd.otf') format('opentype');
+}
+@font-face {
+    font-family: 'HelveticaNeueLt';
+    src: url('/fonts/HelveticaNeueLt.otf') format('opentype');
+}
+
+.MetricHPE_bold {
+    font-family: 'MetricHPE_bold', sans-serif;
+}
+.HelveticaNeueBd {
+    font-family: 'HelveticaNeueBd', sans-serif;
+}
+.HelveticaNeueLt {
+    font-family: 'HelveticaNeueLt', sans-serif;
+}
+
+/* ------------------- COLORS & FONT SIZE ---------------------- */
+:root {
+    --text-color-black: #000000;
+    --text-color-white: #FFFFFF;
+    --bg-color-indigo: #21314D;
+    --bg-color-white: #FFFFFF;
+    --bg-color-blue: #00558C;
+    --bg-color-li-blue: #00B1E2;
+    --bg-color-gray: rgba(33, 49, 77, 0.09);
+    --border-color: #7C7C7C;
+
+    --fs-83: 5.2rem;
+    --fs-22: 1.375rem;
+    --fs-20: 1.25rem;
+    --fs-16: 1rem;
+    --fs-13: 0.8125rem;
+    --fs-12: 0.75rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color-black);
+}
+
+/* ------------------- HEADING ---------------------- */
+.navBar {
+    background-color: var(--bg-color-indigo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.logo_techdata {
+    max-width: 155px;
+}
+
+/* ------------------- MAIN ---------------------- */
+.content {
+    position: relative;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem ;
+}
+
+.content_top {
+    width: 70%;
+}
+
+.content-bottom {
+    width: 100%;
+}
+
+h1 {
+    font-size: var(--fs-83);
+    color: var(--text-color-black);
+}
+
+aside {
+    position: fixed;
+}
+
+.bg-side {
+    width: 100%;
+}
+
+.event_info {
+    font-size: var(--fs-20);
+    color: var(--text-color-white);
+    background-color: var(--bg-color-blue);
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.event_instruction {
+    font-size: var(--fs-22);
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.field_title {
+    font-size: var(--fs-22);
+}
+
+.personal_details_fields .row,
+.field_label, 
+.text_input {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.field_label {
+    font-size: var(--fs-20);
+}
+
+.text_input {
+    font-size: var(--fs-20);
+    width: 512px;
+    height: 42px;
+    border-radius: 7px;
+    border: 1px solid var(--border-color);
+    text-indent: 5px;
+}
+
+.input_field:nth-child(2n+1) {
+    padding-right: 58px;
+}
+
+.personal_details_fields > .row {
+    padding-bottom: 28px;
+}
