@@ -22,10 +22,10 @@
         </div>
         <div class="col-lg-9 col-12 content">
             <section class="content_top">
-                <h1 class="MetricHPE_bold">Growing Edge to Cloud<br>
+                <h1 class="MetricHPE_bold">Growing Edge to Cloud
                                             Possibilites</h1>
                 <div class="event_info row">
-                    <div class="col-5">
+                    <div class="col-lg-5">
                         <div class="event_detail row">
                             <p class="event_detail_bold col-3">
                                 <b>Date:</b>
@@ -43,7 +43,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="event_detail col-7 row">
+                    <div class="event_detail col-lg-7 row">
                         <p class="event_detail_bold col-3">
                             <b>Venue:</b>
                         </p>
@@ -71,45 +71,45 @@
                         </p>
                         <div class="personal_details_fields">
                             <div class="row">
-                                <div class="input_field col-6 row">
+                                <div class="input_field col-lg-6 row mb-2">
                                     <label for="firstName" class="field_label HelveticaNeueLt">
                                         First Name
                                     </label>
-                                    <input type="text" id="firstName" class="text_input" name="firstName">
+                                    <input type="text" id="firstName" class="text_input form-control form-control-custom required" name="firstName">
                                 </div>
-                                <div class="input_field col-6 row">
+                                <div class="input_field col-lg-6 row mb-2">
                                     <label for="lastName" class="field_label HelveticaNeueLt">
                                         Last Name
                                     </label>
-                                    <input type="text" id="lastName" class="text_input" name="lastName">
+                                    <input type="text" id="lastName" class="text_input form-control form-control-custom required" name="lastName">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input_field col-6 row">
+                                <div class="input_field col-lg-6 row mb-2">
                                     <label for="company" class="field_label HelveticaNeueLt">
                                         Company
                                     </label>
-                                    <input type="text" id="company" class="text_input" name="company">
+                                    <input type="text" id="company" class="text_input form-control form-control-custom required" name="company">
                                 </div>
-                                <div class="input_field col-6 row">
+                                <div class="input_field col-lg-6 row mb-2">
                                     <label for="jobTitle" class="field_label HelveticaNeueLt">
                                         Job Title
                                     </label>
-                                    <input type="text" id="jobTitle" class="text_input" name="jobTitle">
+                                    <input type="text" id="jobTitle" class="text_input form-control form-control-custom required" name="jobTitle">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input_field col-6 row">
+                                <div class="input_field col-lg-6 row mb-2">
                                     <label for="businessEmail" class="field_label HelveticaNeueLt">
                                         Business Email
                                     </label>
-                                    <input type="email" id="businessEmail" class="text_input" name="businessEmail">
+                                    <input type="email" id="businessEmail" class="text_input form-control form-control-custom required" name="businessEmail">
                                 </div>
-                                <div class="input_field col-6 row">
+                                <div class="input_field col-lg-6 row mb-2">
                                     <label for="mobileNo" class="field_label HelveticaNeueLt">
                                         Mobile No.
                                     </label>
-                                    <input type="tel" id="mobileNo" class="text_input" name="mobileNo">
+                                    <input type="tel" id="mobileNo" class="text_input form-control form-control-custom required" name="mobileNo">
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                             Attendee Demographics and Interest
                         </p>
 
-                        <select name="business_role" id="business_role" class="HelveticaNeueLt">
+                        <select name="business_role" id="business_role" class="HelveticaNeueLt form-control form-control-dropdown">
                             <option value="" style="display: none">Business Role:</option>
                             <option value="Sales">Sales</option>
                             <option value="Technical">Technical</option>
@@ -127,42 +127,48 @@
 
                         <p class="HelveticaNeueLt">What are the IT projects that your customers are keen on pursuing?</p>
 
-                        <div class="IT_projects HelveticaNeueLt">
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_a" class="IT_input">
-                                <label for="IT_project_a" class="IT_label">Virtual Desktop Infrastructure</label>
+                        <div class="IT_projects HelveticaNeueLt row">
+                            <div class="col-lg-4 ps-0">
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_a" class="IT_input form-check-input">
+                                    <label for="IT_project_a" class="IT_label form-check-label">Virtual Desktop Infrastructure</label>
+                                </div>
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_b" class="IT_input form-check-input">
+                                    <label for="IT_project_b" class="IT_label form-check-label">High Performance Computing</label>
+                                </div>
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_c" class="IT_input form-check-input">
+                                    <label for="IT_project_c" class="IT_label form-check-label">Big Data and Analytics Solutions</label>
+                                </div>
                             </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_b" class="IT_input">
-                                <label for="IT_project_b" class="IT_label">High Performance Computing</label>
+                            <div class="col-lg-4 ps-0">
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_d" class="IT_input form-check-input">
+                                    <label for="IT_project_d" class="IT_label form-check-label">AI, ML and DL</label>
+                                </div>
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_e" class="IT_input form-check-input">
+                                    <label for="IT_project_e" class="IT_label form-check-label">Infrastructure Consolidation to Virtual</label>
+                                </div>
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_f" class="IT_input form-check-input">
+                                    <label for="IT_project_f" class="IT_label form-check-label">Hybrid Cloud</label>
+                                </div>
                             </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_c" class="IT_input">
-                                <label for="IT_project_c" class="IT_label">Big Data and Analytics Solutions</label>
-                            </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_d" class="IT_input">
-                                <label for="IT_project_d" class="IT_label">AI, ML and DL</label>
-                            </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_e" class="IT_input">
-                                <label for="IT_project_e" class="IT_label">Infrastructure Consolidation to Virtual</label>
-                            </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_f" class="IT_input">
-                                <label for="IT_project_f" class="IT_label">Hybrid Cloud</label>
-                            </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_g" class="IT_input">
-                                <label for="IT_project_g" class="IT_label">Security and Networking</label>
-                            </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_h" class="IT_input">
-                                <label for="IT_project_h" class="IT_label">DevOps</label>
-                            </div>
-                            <div class="IT_project">
-                                <input type="radio" name="IT_project" id="IT_project_i" class="IT_input">
-                                <label for="IT_project_i" class="IT_label">Others</label>
+                            <div class="col-lg-4 ps-0">
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_g" class="IT_input form-check-input">
+                                    <label for="IT_project_g" class="IT_label form-check-label">Security and Networking</label>
+                                </div>
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_h" class="IT_input form-check-input">
+                                    <label for="IT_project_h" class="IT_label form-check-label">DevOps</label>
+                                </div>
+                                <div class="IT_project form-check">
+                                    <input type="radio" name="IT_project" id="IT_project_i" class="IT_input form-check-input">
+                                    <label for="IT_project_i" class="IT_label form-check-label">Others</label>
+                                </div>
                             </div>
                         </div>
                     </div>
